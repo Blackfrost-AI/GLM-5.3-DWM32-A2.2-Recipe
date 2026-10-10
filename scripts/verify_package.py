@@ -160,14 +160,14 @@ def verify_descriptors() -> dict:
     asset = read_json(ROOT / "assets/directions.asset.json")
     require(
         asset == {
-            "schema": "blackfrost.private-release-asset.v1",
+            "schema": "blackfrost.release-asset.v1",
             "repository": "Blackfrost-AI/GLM-5.3-DWM32-A2.2-Recipe",
             "release_tag": "directions-v1",
             "asset_name": DIRECTION_NAME,
             "bytes": DIRECTION_BYTES,
             "sha256": DIRECTION_SHA256,
             "git_tracked": False,
-            "private": True,
+            "visibility": "public",
             "required_for_execution": True,
             "contains": [
                 "78 unit direction vectors of width 6144",

@@ -31,7 +31,7 @@ hashes; record all other environment choices with the new run.
     `e128fd62f0d0c4aa179e057b53a615bccf42f30f8ed9ef7c8f7e3dc84c5eb61e`;
   - `fp8_tensor.py` SHA-256
     `ec9caf56fc140720a55732f827dbdd41b9fdf8fcb961a1e37028d4d4b69b7fae`.
-- An authenticated `gh` CLI for the private direction asset.
+- A `gh` CLI able to fetch the public direction Release asset.
 - Network access to the two pinned model repositories.
 - About 1.51 TB for the BF16 source snapshot.
 - At least 565 GB free on the output volume. The executor reserves 100 GB

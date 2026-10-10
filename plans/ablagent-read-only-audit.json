@@ -61,7 +61,7 @@
     },
     {
       "id": "asset",
-      "prompt": "Read assets/directions.asset.json completely. Report where the private asset belongs, its byte count, hash, and whether it is tracked in Git. Open no other file.",
+      "prompt": "Read assets/directions.asset.json completely. Report where the public Release asset belongs, its byte count, hash, and whether it is tracked in Git. Open no other file.",
       "allowedTools": ["read_file"],
       "exactPaths": ["assets/directions.asset.json"],
       "maxToolCalls": 4,

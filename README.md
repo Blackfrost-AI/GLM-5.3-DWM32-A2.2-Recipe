@@ -56,7 +56,7 @@ direction[l] = mean[l] / L2_norm(mean[l])
 ```
 
 There is no PCA, SVD, orthogonalization, or later sign anchoring. The
-harmful-minus-control order defines the sign. The private direction artifact
+harmful-minus-control order defines the sign. The public direction artifact
 also contains the captured activations and pair deltas, so
 [`scripts/verify_direction_derivation.py`](scripts/verify_direction_derivation.py)
 can independently recompute and check all 78 directions.
@@ -102,10 +102,10 @@ eight Torch threads each are fixed to match the recorded implementation.
 | `RUNBOOK.md` | Exact ordered operator procedure |
 | `recipe.lock.json` | Immutable model, math, geometry, count, and hash contract |
 | `environment.lock.json` | Recorded capture runtime and surviving build pins |
-| `assets/` | Exact pair/token material and private asset descriptor |
+| `assets/` | Exact pair/token material and public Release asset descriptor |
 | `evidence/` | Sanitized capture and historical structural receipts |
 | `scripts/verify_package.py` | Package, lock, pair, token, and optional direction verifier |
-| `scripts/materialize_directions.py` | Authenticated private Release asset downloader |
+| `scripts/materialize_directions.py` | Public GitHub Release asset downloader |
 | `scripts/prepare_reference.py` | Pinned reference header and scalar range fetcher |
 | `scripts/verify_source_snapshot.py` | Full 282-shard BF16 SHA-256 verifier and receipt writer |
 | `scripts/run_locked.py` | Locked projection and serialization executor |
@@ -113,7 +113,7 @@ eight Torch threads each are fixed to match the recorded implementation.
 | `plans/ablagent-read-only-audit.json` | Ablagent Standalone Harness 1.0.0 audit plan |
 
 The repository contains no GLM weights and does not track the 193.6 MB
-direction tensor. The direction tensor is distributed as a private GitHub
+direction tensor. The direction tensor is distributed as a public GitHub
 Release asset and is always checked by byte count and SHA-256 before use.
 The retained derivation receipt records a second, independent bitwise
 reconstruction of its pair deltas and all 78 normalized directions.
@@ -130,10 +130,10 @@ python3 scripts/verify_direction_derivation.py \
   artifacts/glm53-nvfp4-raw32.directions.safetensors
 ```
 
-The download command requires an authenticated GitHub CLI account with access
-to this private repository. For the complete source preparation, probe, build,
-and verification sequence, follow [`RUNBOOK.md`](RUNBOOK.md) without reordering
-or replacing steps.
+The download command uses the GitHub CLI to fetch the asset from this public
+repository. For the complete source preparation, probe, build, and verification
+sequence, follow [`RUNBOOK.md`](RUNBOOK.md) without reordering or replacing
+steps.
 
 ## Ablagent Standalone Harness integration
 

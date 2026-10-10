@@ -20,7 +20,7 @@ runtime and output shard hashes were not preserved. Read the reproducibility
 section in `RUNBOOK.md` before execution.
 
 Before execution, run `python3 scripts/verify_package.py`. Materialize the
-private direction asset and rerun the verifier with `--directions`. Stop on
+public direction Release asset and rerun the verifier with `--directions`. Stop on
 any checksum, metadata, count, shape, revision, or environment mismatch.
 
 Ablagent Standalone Harness 1.0.0 can audit this repository through

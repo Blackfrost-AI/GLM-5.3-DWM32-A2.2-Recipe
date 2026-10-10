@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-FileCopyrightText: Copyright 2026 Blackfrost AI
 # SPDX-License-Identifier: Apache-2.0
-"""Acquire the private direction Release asset or verify an existing copy."""
+"""Acquire the public direction Release asset or verify an existing copy."""
 
 from __future__ import annotations
 
@@ -56,7 +56,7 @@ def copy_atomic(source: pathlib.Path, output: pathlib.Path) -> None:
 
 def download(output: pathlib.Path) -> None:
     if shutil.which("gh") is None:
-        raise RuntimeError("GitHub CLI (gh) is required to download the private Release asset")
+        raise RuntimeError("GitHub CLI (gh) is required to download the public Release asset")
     output.parent.mkdir(parents=True, exist_ok=True)
     usage = shutil.disk_usage(output.parent)
     if usage.free < BYTES + 100_000_000:
