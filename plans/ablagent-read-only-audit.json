@@ -1,0 +1,93 @@
+{
+  "name": "glm53-dwm32-a2p2-locked-method-audit",
+  "variables": {
+    "TASK": "Audit the locked GLM-5.3 DWM32 alpha-2.2 method without modifying files or claiming behavioral qualification."
+  },
+  "stages": [
+    {
+      "id": "contract",
+      "prompt": "Read AGENTS.md completely. Report the immutable method boundary, execution boundary, and claims boundary. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["AGENTS.md"],
+      "maxToolCalls": 4,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["immutable", "read-only|read only", "generation-tested|generation tested"]
+    },
+    {
+      "id": "lock",
+      "prompt": "Read recipe.lock.json completely. Report the exact source revision, direction hash, alpha, layer range, target counts, reference revision, and ModelOpt commit. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["recipe.lock.json"],
+      "maxToolCalls": 6,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["2\\.2", "9d2398f478cab2de883137db3a36ad2c96205e24", "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8"]
+    },
+    {
+      "id": "runbook",
+      "prompt": "Read RUNBOOK.md completely. Report the ordered preflight, probe, build, verify, and scalar-verification commands plus required storage. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["RUNBOOK.md"],
+      "maxToolCalls": 10,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["preflight", "probe", "build", "verify"]
+    },
+    {
+      "id": "capture-evidence",
+      "prompt": "Read evidence/capture-receipt.json completely. Distinguish measured capture properties from its explicit causal limitation. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["evidence/capture-receipt.json"],
+      "maxToolCalls": 4,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["captured_verified", "response-level refusal causality"]
+    },
+    {
+      "id": "run-evidence",
+      "prompt": "Read evidence/original-run-receipt.json completely. Report structural checks and every false untested-state field. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["evidence/original-run-receipt.json"],
+      "maxToolCalls": 6,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["source_unchanged", "loaded", "generation_tested", "transferred_to_b200"]
+    },
+    {
+      "id": "asset",
+      "prompt": "Read assets/directions.asset.json completely. Report where the private asset belongs, its byte count, hash, and whether it is tracked in Git. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["assets/directions.asset.json"],
+      "maxToolCalls": 4,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["193612804", "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8", "git_tracked"]
+    },
+    {
+      "id": "executor-source",
+      "prompt": "Read scripts/run_locked.py completely. Confirm that alpha and geometry are constants, paths are operator inputs, and invariant mismatches fail closed. Open no other file.",
+      "allowedTools": ["read_file"],
+      "exactPaths": ["scripts/run_locked.py"],
+      "maxToolCalls": 20,
+      "minSuccessfulToolCalls": 1,
+      "requireCompleteRead": true,
+      "enforceContinuation": true,
+      "requiredPatterns": ["ALPHA", "2\\.2", "fail|assert", "layers 2"]
+    },
+    {
+      "id": "synthesis",
+      "prompt": "Make no tool calls. Synthesize the retained receipts using exactly these headings in order: LOCK STATUS; METHOD; ASSETS; HARNESS BOUNDARY; HISTORICAL EVIDENCE; UNTESTED; NEXT VALID ACTION. Do not call the artifact release-ready or behaviorally qualified.",
+      "allowedTools": [],
+      "maxToolCalls": 0,
+      "requiredPatterns": ["LOCK STATUS", "METHOD", "ASSETS", "HARNESS BOUNDARY", "HISTORICAL EVIDENCE", "UNTESTED", "NEXT VALID ACTION"]
+    }
+  ]
+}
+

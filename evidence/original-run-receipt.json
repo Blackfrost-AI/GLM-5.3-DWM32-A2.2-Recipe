@@ -1,0 +1,54 @@
+{
+  "schema": "blackfrost.dwm.offline-run-receipt.v1",
+  "completed_utc": "2026-10-01T19:54:27Z",
+  "complete": true,
+  "alpha": 2.2,
+  "weight_shards": 50,
+  "weight_index_tensors": 232403,
+  "edited_counts": {
+    "o_proj": 76,
+    "dense_down": 1,
+    "expert_down": 19200,
+    "shared_down": 75
+  },
+  "mtp_tensors_unchanged": 791,
+  "unmodified_bf16_and_f32_tensors_byte_equal": 1825,
+  "nvidia_activation_scales_preserved": 57609,
+  "nvidia_layout_matches": true,
+  "source_unchanged": true,
+  "cuda_initialized_during_build": false,
+  "weight_file_bytes": 464143550648,
+  "fresh_post_dwm_activation_calibration": false,
+  "stored_dwm_signed_component": {
+    "count": 19201,
+    "min": -1.2037454843521118,
+    "max": -1.185229778289795,
+    "mean": -1.1943192494039108
+  },
+  "quantization_weight_relative_error": {
+    "count": 19200,
+    "min": 0.0850134938955307,
+    "max": 0.09526535868644714,
+    "mean": 0.09506218137491183
+  },
+  "serialized_scale_verification": {
+    "passed": true,
+    "serialized_positive_finite_scales": 115218,
+    "nvidia_activation_scales_exact": 57609,
+    "gate_up_weight_scale_pairs_exact": 19203
+  },
+  "loaded": false,
+  "generation_tested": false,
+  "transferred_to_b200": false,
+  "original_evidence_sha256": {
+    "README.md": "63f3cde3a9b8466f09bafb000ae1b1cc46766a37e71550b42662381ddeccf59b",
+    "build-complete.json": "568c10723e9efea03e8b0786f375827338f0153fc2018b78ea085f09fa93f80c",
+    "build-plan.json": "ed02b36042d1bdf87db3cd1b7c535d795b8f9044493a7ce22fe98bbe86a69de1",
+    "build_streamed.py": "2b857ededdb3cc2caaeb173a4d99879d4ee221f2daa71295055aecf4fad9dad0",
+    "fetch_nvidia_reference.py": "b34013e51fd1826a65b124a6e69ac56da0225777ff0811588e1a0f9440538e2a",
+    "preflight-probes.json": "b78e369fa81a9b8012eb7c427f8831f89d9d63a11c22d19cde69570f7b2a92a1",
+    "serialized-scale-verification.json": "f39e60610dc3f9e6259715b641d56db291591f62c40c4437fef2da34c65a0ed9",
+    "verify_scalar_layout.py": "90370fa56a795bd5c268c8eaafda3f9f65e226aa66b273e55fc1f66a3cbb0ddc"
+  }
+}
+

@@ -1,0 +1,118 @@
+{
+  "schema": "blackfrost.dwm.exact-replay.v1",
+  "recipe_id": "glm-5.3-bf16-dwm32-a2p2-nvfp4",
+  "version": "1.0.0",
+  "source": {
+    "repo": "zai-org/GLM-5.3-BF16",
+    "revision": "9d2398f478cab2de883137db3a36ad2c96205e24",
+    "config_sha256": "ca8f2f47b07919a514c0ca223dc2ea2bc7445afaa5ac76c013a3784e096426ca",
+    "index_sha256": "5fd47a926aefce0f2c917f42523e5e0f3c87e23e389e767c3681536a62f5cf5e",
+    "indexed_tensors": 59585,
+    "weight_shards": 282,
+    "lfs_shard_bytes": 1506667387408,
+    "lfs_manifest_canonical_sha256": "d7e8f6f8f6d6b03413e7fe5bdefa65c1a4b8d6dd19f30dd963498595ea8c84c2",
+    "runtime_files_sha256": {
+      "chat_template.jinja": "3740abcea51c45830cb3ca562084ad5fb2ef53589376f73332e9886f93ade41c",
+      "generation_config.json": "ac76b43d8683d3b930126870fc8be73d8679308fe752fa1f381096d8354f6a55",
+      "tokenizer.json": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "tokenizer_config.json": "98b1271574f41abf89427ae2dda030d94dc9478f0edc5a8bd240db213c6fd5fc"
+    },
+    "quantized": false
+  },
+  "directions": {
+    "capture_repo": "nvidia/GLM-5.3-NVFP4",
+    "capture_revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+    "artifact": "glm53-nvfp4-raw32.directions.safetensors",
+    "bytes": 193612804,
+    "sha256": "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8",
+    "tensor_key": "dirs",
+    "dtype": "F32",
+    "shape": [78, 6144],
+    "rank": 1,
+    "pairs": 32,
+    "pair_rows": 64,
+    "human_pairs_sha256": "2b59fd6a6ea02cb22828bab0c6af41df5886836110ddee5b53c5d7deae3b994b",
+    "pair_bank_sha256": "3ff10646a571a86b660bb4048d47d7984c56b779b5cf8a74c0d85045ea02f080",
+    "frozen_tokens_sha256": "bade6eb8be22cd93fe36fe5bbd027b75245bb17ac78e34dd583280de24f92f1d",
+    "harmful_text_sha256": "b8f800500faad5f32208044dd979e16233a7793157a7ee7bfa97aa54832cf32d",
+    "control_text_sha256": "80b826fd56b555dd8f2b8c813bb4a0972d4ba337fe46eb7aebe91fdcdee3fa9d",
+    "prompt_profile": {
+      "chat_template_applied": false,
+      "system_prompt": null,
+      "generation_prompt_added": false,
+      "raw_tokenization": true,
+      "add_special_tokens": true,
+      "generated_tokens": 0,
+      "capture_position": "last real raw-prompt prefill token",
+      "primary_site": "post_layer_residual_sum"
+    },
+    "derivation": {
+      "row_order": "harmful then matched control",
+      "delta": "harmful minus control",
+      "reduction": "simple FP64 mean across 32 pair deltas per layer",
+      "normalization": "independent L2 normalization per layer",
+      "pca": false,
+      "svd": false,
+      "orthogonalization": false,
+      "additional_sign_anchoring": false
+    }
+  },
+  "operation": {
+    "alpha": 2.2,
+    "passes": 1,
+    "rank": 1,
+    "first_layer": 2,
+    "last_layer": 77,
+    "excluded_mtp_layer": 78,
+    "arithmetic": "FP32 projection then BF16 rounding before quantization",
+    "norm_restoration": false,
+    "quantization_correction_iterations": 0,
+    "targets": {
+      "o_proj": 76,
+      "dense_down": 1,
+      "expert_down": 19200,
+      "shared_down": 75,
+      "total": 19352
+    }
+  },
+  "serialization": {
+    "reference_repo": "nvidia/GLM-5.3-NVFP4",
+    "reference_revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+    "config_sha256": "b0b6b9ab922a82e3688bc39a4117bc443e106fcf88969ef48b3627778f4bdf7b",
+    "quant_config_sha256": "13799d4fed353c20dde2264fbdd7f68a780b514782f8d80bba96ac5e44aa9bba",
+    "index_sha256": "157752617100cefaf25a468812e14abefca24c356e6e2f7ae55bce8c3b511863",
+    "weight_shards": 50,
+    "indexed_tensors": 232403,
+    "expected_data_bytes": 464115789896,
+    "lfs_shard_bytes": 464143549144,
+    "lfs_manifest_canonical_sha256": "b689de6aaa32aa8ce801be0bbf2a46b6ac0fb66afc5d14daecfacfa9f213b66a",
+    "activation_scales_reused": 57609,
+    "fresh_post_dwm_activation_calibration": false,
+    "weight_scales": "recomputed from edited BF16; gate/up share per-expert joint amax",
+    "modelopt_source": "0.48.0dev-022767c7",
+    "modelopt_commit": "022767c7ab3d7d36211affd85e5c496770cde768",
+    "modelopt_critical_file_sha256": {
+      "modelopt/__init__.py": "96647188e0afa8dcdcadbe42178feeb4cc19113d9ffcbaf633bd62414bd6d453",
+      "nvfp4_tensor.py": "e128fd62f0d0c4aa179e057b53a615bccf42f30f8ed9ef7c8f7e3dc84c5eb61e",
+      "fp8_tensor.py": "ec9caf56fc140720a55732f827dbdd41b9fdf8fcb961a1e37028d4d4b69b7fae"
+    }
+  },
+  "historical_result": {
+    "completed_utc": "2026-10-01T19:54:27Z",
+    "offline_structural_verification": true,
+    "source_unchanged": true,
+    "mtp_tensors_byte_equal": 791,
+    "unmodified_bf16_f32_tensors_byte_equal": 1825,
+    "output_weight_file_bytes": 464143550648,
+    "loaded": false,
+    "generation_tested": false,
+    "transferred_to_b200": false,
+    "output_hash_manifest_preserved": false
+  },
+  "reproducibility": {
+    "class": "method-equivalent",
+    "byte_identical_output_promised": false,
+    "reason": "The exact historical build Python, PyTorch, safetensors, OS, CPU, launch command, output shards, and output shard hashes were not preserved."
+  }
+}
+

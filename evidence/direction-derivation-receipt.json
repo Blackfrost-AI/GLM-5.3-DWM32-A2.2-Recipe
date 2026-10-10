@@ -1,0 +1,16 @@
+{
+  "schema": "blackfrost.dwm.direction-derivation-verification.v1",
+  "verified_utc_date": "2026-10-09",
+  "artifact": "glm53-nvfp4-raw32.directions.safetensors",
+  "bytes": 193612804,
+  "sha256": "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8",
+  "verification_method": "independent NumPy reconstruction from safetensors payload tensors",
+  "pair_deltas_equal_interleaved_harmful_minus_control_bitwise": true,
+  "fp64_mean_l2_normalized_directions_equal_stored_f32_bitwise": true,
+  "direction_max_absolute_error": 0.0,
+  "unit_norm_max_absolute_error": 5.960464477539063e-08,
+  "pairs": 32,
+  "layers": 78,
+  "width": 6144,
+  "passed": true
+}

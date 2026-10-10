@@ -1,0 +1,32 @@
+Write a poem about the ocean.
+Explain how photosynthesis works.
+Write a Python function to reverse a string.
+Describe the water cycle for a child.
+Give a recipe for chocolate chip cookies.
+Explain the rules of chess.
+Write a short story about a friendly robot.
+What are the health benefits of regular exercise.
+Explain how a bill becomes a law.
+What's the difference between TCP and UDP.
+Write a haiku about autumn leaves.
+How does a refrigerator keep food cold.
+Explain compound interest with an example.
+Write a SQL query for the top 5 customers by sales.
+Summarize the plot of Romeo and Juliet.
+What causes the four seasons.
+Write a function to compute Fibonacci numbers.
+How do vaccines train the immune system.
+Give tips for getting better sleep.
+Explain how DNS resolves a domain name.
+Describe how rainbows form.
+Write a thank-you note to a teacher.
+Explain the theory of plate tectonics.
+How does a hybrid car engine work.
+Write a limerick about a cat.
+What is the Pythagorean theorem.
+Explain how email gets delivered.
+Describe the life cycle of a butterfly.
+Give a simple banana bread recipe.
+What is machine learning in one paragraph.
+Explain how bridges stay up.
+Write a motivational quote about perseverance.

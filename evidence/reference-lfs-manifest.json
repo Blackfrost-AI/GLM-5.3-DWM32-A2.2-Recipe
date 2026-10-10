@@ -1,0 +1,315 @@
+{
+  "schema": "blackfrost.huggingface-lfs-shard-manifest.v1",
+  "repository": "nvidia/GLM-5.3-NVFP4",
+  "revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+  "shard_count": 50,
+  "total_bytes": 464143549144,
+  "canonicalization": {
+    "ordering": "ascending UTF-8 path order",
+    "record_format": "{path}\\t{bytes}\\t{sha256}\\n",
+    "encoding": "UTF-8",
+    "sha256": "b689de6aaa32aa8ce801be0bbf2a46b6ac0fb66afc5d14daecfacfa9f213b66a"
+  },
+  "entries": [
+    {
+      "path": "model-00001-of-00050.safetensors",
+      "bytes": 10005524504,
+      "sha256": "c11ab2d7c03def75148ac43a8525ddf84987fe5b4b2c06324a62c1fd14527d34",
+      "lfs_oid": "sha256:c11ab2d7c03def75148ac43a8525ddf84987fe5b4b2c06324a62c1fd14527d34"
+    },
+    {
+      "path": "model-00002-of-00050.safetensors",
+      "bytes": 10005159760,
+      "sha256": "a9bfc44a263ecddac4ef473cb0aecf7392a1b6379d21b2905482612dbbb97f9f",
+      "lfs_oid": "sha256:a9bfc44a263ecddac4ef473cb0aecf7392a1b6379d21b2905482612dbbb97f9f"
+    },
+    {
+      "path": "model-00003-of-00050.safetensors",
+      "bytes": 10009279488,
+      "sha256": "b15f328add350138fb0cac40d17cb2abf83eae41327e846ff77e471e3453bad5",
+      "lfs_oid": "sha256:b15f328add350138fb0cac40d17cb2abf83eae41327e846ff77e471e3453bad5"
+    },
+    {
+      "path": "model-00004-of-00050.safetensors",
+      "bytes": 10016048000,
+      "sha256": "ad1f863113936314365e8a7582abd96bf8ac496388b598a8056f709ad4cb4f4b",
+      "lfs_oid": "sha256:ad1f863113936314365e8a7582abd96bf8ac496388b598a8056f709ad4cb4f4b"
+    },
+    {
+      "path": "model-00005-of-00050.safetensors",
+      "bytes": 3824862392,
+      "sha256": "664756beb6e9e943cc7681e75ea1ff9c7437abaedee29729a31b2dd6836a43f8",
+      "lfs_oid": "sha256:664756beb6e9e943cc7681e75ea1ff9c7437abaedee29729a31b2dd6836a43f8"
+    },
+    {
+      "path": "model-00006-of-00050.safetensors",
+      "bytes": 10005524504,
+      "sha256": "b308c73957c86ff421f644fec1537999d1dcc43dfcf38d5f6276c657006aa96a",
+      "lfs_oid": "sha256:b308c73957c86ff421f644fec1537999d1dcc43dfcf38d5f6276c657006aa96a"
+    },
+    {
+      "path": "model-00007-of-00050.safetensors",
+      "bytes": 10005159760,
+      "sha256": "02604f1d306830e3aad3353a6cd4d8247a39fefac85283f7b6e68a1323703ed2",
+      "lfs_oid": "sha256:02604f1d306830e3aad3353a6cd4d8247a39fefac85283f7b6e68a1323703ed2"
+    },
+    {
+      "path": "model-00008-of-00050.safetensors",
+      "bytes": 3944247720,
+      "sha256": "1c7ce914ab034ef72353566bf8fc5d75dfc565072342c519d7bc9f0e7d58de6a",
+      "lfs_oid": "sha256:1c7ce914ab034ef72353566bf8fc5d75dfc565072342c519d7bc9f0e7d58de6a"
+    },
+    {
+      "path": "model-00009-of-00050.safetensors",
+      "bytes": 10001329632,
+      "sha256": "4b558d1ad16d532a333634daa547ac51f9bf5910edb0f2f1c3ba5986f93892ec",
+      "lfs_oid": "sha256:4b558d1ad16d532a333634daa547ac51f9bf5910edb0f2f1c3ba5986f93892ec"
+    },
+    {
+      "path": "model-00010-of-00050.safetensors",
+      "bytes": 10006470232,
+      "sha256": "48cf2733956ee90d693f91b23c296244b415794c4e984d3814712142a09e6b15",
+      "lfs_oid": "sha256:48cf2733956ee90d693f91b23c296244b415794c4e984d3814712142a09e6b15"
+    },
+    {
+      "path": "model-00011-of-00050.safetensors",
+      "bytes": 4022109792,
+      "sha256": "88dada41a8bd76e5016ce9707a40dba050153d0ee2b941c357cb5fdd574ee197",
+      "lfs_oid": "sha256:88dada41a8bd76e5016ce9707a40dba050153d0ee2b941c357cb5fdd574ee197"
+    },
+    {
+      "path": "model-00012-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "caf437ee724cde70fc7481bd541e28c0c2d9c912448ee5fc0dadf66e4576b8a2",
+      "lfs_oid": "sha256:caf437ee724cde70fc7481bd541e28c0c2d9c912448ee5fc0dadf66e4576b8a2"
+    },
+    {
+      "path": "model-00013-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "3667144ff2784dc86f54e4dda451592a6209e60649abe996e1d5a14e34f080dc",
+      "lfs_oid": "sha256:3667144ff2784dc86f54e4dda451592a6209e60649abe996e1d5a14e34f080dc"
+    },
+    {
+      "path": "model-00014-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "d818e5277d77d996e05c06dca5e742b97ff5b893a32a3dd3863fdad0f926269d",
+      "lfs_oid": "sha256:d818e5277d77d996e05c06dca5e742b97ff5b893a32a3dd3863fdad0f926269d"
+    },
+    {
+      "path": "model-00015-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "5e94513f24268df0b09144576d7c1dcfd62f8f2add37671ae7fb40f910af29ad",
+      "lfs_oid": "sha256:5e94513f24268df0b09144576d7c1dcfd62f8f2add37671ae7fb40f910af29ad"
+    },
+    {
+      "path": "model-00016-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "7a4ea91f2a07c40e535cdf81374d89fea962fc99dbd469af56224c3df1312fb1",
+      "lfs_oid": "sha256:7a4ea91f2a07c40e535cdf81374d89fea962fc99dbd469af56224c3df1312fb1"
+    },
+    {
+      "path": "model-00017-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "8ecb8536cc5d61fc26efcedad497a6400c386a8460012a90d29e1b4dc3a7f5e0",
+      "lfs_oid": "sha256:8ecb8536cc5d61fc26efcedad497a6400c386a8460012a90d29e1b4dc3a7f5e0"
+    },
+    {
+      "path": "model-00018-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "f17ab7d35a52f4d7c6cadd3882843460aa43d45c678058ec67efcdea766c6d96",
+      "lfs_oid": "sha256:f17ab7d35a52f4d7c6cadd3882843460aa43d45c678058ec67efcdea766c6d96"
+    },
+    {
+      "path": "model-00019-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "a75e6f40baaede84c8e4955cb30cf55396ba0762e2686b2ddddc760de87fa205",
+      "lfs_oid": "sha256:a75e6f40baaede84c8e4955cb30cf55396ba0762e2686b2ddddc760de87fa205"
+    },
+    {
+      "path": "model-00020-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "f2b94c0f2065c3903b18a85aefa74dff114a01548f9f4abd6744b9881081c00b",
+      "lfs_oid": "sha256:f2b94c0f2065c3903b18a85aefa74dff114a01548f9f4abd6744b9881081c00b"
+    },
+    {
+      "path": "model-00021-of-00050.safetensors",
+      "bytes": 10005658232,
+      "sha256": "ed588eb5dd1d6772204b4dcaa359cd5b098881a2e6505d57b726c7d6544732c9",
+      "lfs_oid": "sha256:ed588eb5dd1d6772204b4dcaa359cd5b098881a2e6505d57b726c7d6544732c9"
+    },
+    {
+      "path": "model-00022-of-00050.safetensors",
+      "bytes": 10000964992,
+      "sha256": "fd9673ccca8c56ea2508d9898ed6f59c04abe62bae210dba29fd5bf9d8f9d67f",
+      "lfs_oid": "sha256:fd9673ccca8c56ea2508d9898ed6f59c04abe62bae210dba29fd5bf9d8f9d67f"
+    },
+    {
+      "path": "model-00023-of-00050.safetensors",
+      "bytes": 9311626616,
+      "sha256": "e226c4f483694585ff40be12e5a9aee81661c7e606829f44a75b910504b1b556",
+      "lfs_oid": "sha256:e226c4f483694585ff40be12e5a9aee81661c7e606829f44a75b910504b1b556"
+    },
+    {
+      "path": "model-00024-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "0046bc1fc8e964139628fa1d84954e31e76effade1f7e7ac6c6adfcb469fff34",
+      "lfs_oid": "sha256:0046bc1fc8e964139628fa1d84954e31e76effade1f7e7ac6c6adfcb469fff34"
+    },
+    {
+      "path": "model-00025-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "aa3405c7c39ef551d690742594410ab7be5f5b6fb3a78bfbb434427f982d91f9",
+      "lfs_oid": "sha256:aa3405c7c39ef551d690742594410ab7be5f5b6fb3a78bfbb434427f982d91f9"
+    },
+    {
+      "path": "model-00026-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "4d558a70ffa0941c4aeafca85cfcbc0d40de4a9d55d92aab7a3b83d0de66e72d",
+      "lfs_oid": "sha256:4d558a70ffa0941c4aeafca85cfcbc0d40de4a9d55d92aab7a3b83d0de66e72d"
+    },
+    {
+      "path": "model-00027-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "50541e3e2ab6e39b17dbd35e76d0969cb5439fcb31b5164f0c2b9855a0ed3d93",
+      "lfs_oid": "sha256:50541e3e2ab6e39b17dbd35e76d0969cb5439fcb31b5164f0c2b9855a0ed3d93"
+    },
+    {
+      "path": "model-00028-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "0ab803c7cc7453388676502d9ef5035b5e4302282c18378ac2742db3c3d8f0ea",
+      "lfs_oid": "sha256:0ab803c7cc7453388676502d9ef5035b5e4302282c18378ac2742db3c3d8f0ea"
+    },
+    {
+      "path": "model-00029-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "4f1f3afea31b8e48949adf25ecc1e2abfd1ac3657e6bcf91928fc17770538e61",
+      "lfs_oid": "sha256:4f1f3afea31b8e48949adf25ecc1e2abfd1ac3657e6bcf91928fc17770538e61"
+    },
+    {
+      "path": "model-00030-of-00050.safetensors",
+      "bytes": 10003561240,
+      "sha256": "fd8dccfa6ac70606be97f0dcb3ddccfb9ef4d1ada59ee1a74d0023784bd90ab0",
+      "lfs_oid": "sha256:fd8dccfa6ac70606be97f0dcb3ddccfb9ef4d1ada59ee1a74d0023784bd90ab0"
+    },
+    {
+      "path": "model-00031-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "0c00b6c57b1a424c1c113e3071c8accd03be9b740b3aa5fb882baa85e98cb4c9",
+      "lfs_oid": "sha256:0c00b6c57b1a424c1c113e3071c8accd03be9b740b3aa5fb882baa85e98cb4c9"
+    },
+    {
+      "path": "model-00032-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "214921b850f12936c843079e8f98d8c5b0d2d79554fe90e8fe70e82e656ff801",
+      "lfs_oid": "sha256:214921b850f12936c843079e8f98d8c5b0d2d79554fe90e8fe70e82e656ff801"
+    },
+    {
+      "path": "model-00033-of-00050.safetensors",
+      "bytes": 10005661840,
+      "sha256": "5b59c883a6e2bb26d5160d137293b9db89d8a94c7a66cc0814a2b6e235a7b613",
+      "lfs_oid": "sha256:5b59c883a6e2bb26d5160d137293b9db89d8a94c7a66cc0814a2b6e235a7b613"
+    },
+    {
+      "path": "model-00034-of-00050.safetensors",
+      "bytes": 10000964992,
+      "sha256": "cf920939057bbb0628ae219796fcef1e8aee09a3a02967ac60292b9cfa5a1f76",
+      "lfs_oid": "sha256:cf920939057bbb0628ae219796fcef1e8aee09a3a02967ac60292b9cfa5a1f76"
+    },
+    {
+      "path": "model-00035-of-00050.safetensors",
+      "bytes": 9311626616,
+      "sha256": "5a42958034cf6e9f1db0bc0f620e476ddae3c19bc40f60bc3576040ac9437353",
+      "lfs_oid": "sha256:5a42958034cf6e9f1db0bc0f620e476ddae3c19bc40f60bc3576040ac9437353"
+    },
+    {
+      "path": "model-00036-of-00050.safetensors",
+      "bytes": 10003564824,
+      "sha256": "7a428c3ddaf1216e7f569786391fa9b0da66412958df1efbf2e2077e168634c0",
+      "lfs_oid": "sha256:7a428c3ddaf1216e7f569786391fa9b0da66412958df1efbf2e2077e168634c0"
+    },
+    {
+      "path": "model-00037-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "c03cf751f5dd4e30f57725183b6fa084ec4255dcde612d4703af7b4cbcf9a071",
+      "lfs_oid": "sha256:c03cf751f5dd4e30f57725183b6fa084ec4255dcde612d4703af7b4cbcf9a071"
+    },
+    {
+      "path": "model-00038-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "0d5df9fa95edcb7b9b6f143a1421588d086428ffc96f5e540a7cc0f3ff27ac48",
+      "lfs_oid": "sha256:0d5df9fa95edcb7b9b6f143a1421588d086428ffc96f5e540a7cc0f3ff27ac48"
+    },
+    {
+      "path": "model-00039-of-00050.safetensors",
+      "bytes": 10003564824,
+      "sha256": "ab59ec25fd649d2b12bf129044b5bc894e9903c95438d765f84ec661bd62d12b",
+      "lfs_oid": "sha256:ab59ec25fd649d2b12bf129044b5bc894e9903c95438d765f84ec661bd62d12b"
+    },
+    {
+      "path": "model-00040-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "645521cba0ffaf7a982d28a5afb3befb431be89f76b46905179a02df48708e0d",
+      "lfs_oid": "sha256:645521cba0ffaf7a982d28a5afb3befb431be89f76b46905179a02df48708e0d"
+    },
+    {
+      "path": "model-00041-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "eed332e97bbfe56f066921081e91d8bc3c8c639a37d7dc4dfdbb1fdc07993f6f",
+      "lfs_oid": "sha256:eed332e97bbfe56f066921081e91d8bc3c8c639a37d7dc4dfdbb1fdc07993f6f"
+    },
+    {
+      "path": "model-00042-of-00050.safetensors",
+      "bytes": 10003564824,
+      "sha256": "4f0f53fe189706f48b116860ed998cdf1da74f2c25f3645f73107f06c42ad322",
+      "lfs_oid": "sha256:4f0f53fe189706f48b116860ed998cdf1da74f2c25f3645f73107f06c42ad322"
+    },
+    {
+      "path": "model-00043-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "b694e884d44d40ad598d00baf84541abf796118eb02e86ca31b195278624e3cc",
+      "lfs_oid": "sha256:b694e884d44d40ad598d00baf84541abf796118eb02e86ca31b195278624e3cc"
+    },
+    {
+      "path": "model-00044-of-00050.safetensors",
+      "bytes": 9215806584,
+      "sha256": "091c4760177010b9b1c533c22e4714a36d1eef355fff7241405913bdfdc9de11",
+      "lfs_oid": "sha256:091c4760177010b9b1c533c22e4714a36d1eef355fff7241405913bdfdc9de11"
+    },
+    {
+      "path": "model-00045-of-00050.safetensors",
+      "bytes": 10005661840,
+      "sha256": "35fac7c48666c633a8287e0b55eaa6581df869f0aafa4068ffb843fe62e17d3a",
+      "lfs_oid": "sha256:35fac7c48666c633a8287e0b55eaa6581df869f0aafa4068ffb843fe62e17d3a"
+    },
+    {
+      "path": "model-00046-of-00050.safetensors",
+      "bytes": 10000964992,
+      "sha256": "87215e1c3f6261117d130b1af1d5cb935b79b8a20164e4c9626bd1ac3ca9bfe7",
+      "lfs_oid": "sha256:87215e1c3f6261117d130b1af1d5cb935b79b8a20164e4c9626bd1ac3ca9bfe7"
+    },
+    {
+      "path": "model-00047-of-00050.safetensors",
+      "bytes": 7254319880,
+      "sha256": "a737176180cc941c413b5cb4aed6a9a9792cda90e796c492de5bd2047348a216",
+      "lfs_oid": "sha256:a737176180cc941c413b5cb4aed6a9a9792cda90e796c492de5bd2047348a216"
+    },
+    {
+      "path": "model-00048-of-00050.safetensors",
+      "bytes": 10003564824,
+      "sha256": "e1000409749c91640fddad1f9cae814d1117ad44e83b73a42c04a01a5a16c9ce",
+      "lfs_oid": "sha256:e1000409749c91640fddad1f9cae814d1117ad44e83b73a42c04a01a5a16c9ce"
+    },
+    {
+      "path": "model-00049-of-00050.safetensors",
+      "bytes": 10005159768,
+      "sha256": "658c93841389fd81c0869a2783ea246ede736bf75e5ef0c1fbd676859706637d",
+      "lfs_oid": "sha256:658c93841389fd81c0869a2783ea246ede736bf75e5ef0c1fbd676859706637d"
+    },
+    {
+      "path": "model-00050-of-00050.safetensors",
+      "bytes": 3370899688,
+      "sha256": "6ff9a1ce63a75806cc1121d3b2cd15fc55a19ee485d72cdb65b5a6baa5cc860e",
+      "lfs_oid": "sha256:6ff9a1ce63a75806cc1121d3b2cd15fc55a19ee485d72cdb65b5a6baa5cc860e"
+    }
+  ]
+}

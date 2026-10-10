@@ -1,0 +1,32 @@
+{
+  "schema": "blackfrost.recorded-environment.v1",
+  "capture_runtime": {
+    "python": "3.12.14",
+    "torch": "2.13.0+cu130",
+    "cuda_toolkit": "13.0",
+    "transformers": "5.12.1",
+    "sglang": "0.5.20",
+    "safetensors": "0.9.0-rc.1",
+    "tensor_parallel": 8,
+    "quantization_runtime": "modelopt_mixed",
+    "attention_backend": "flashinfer_trtllm"
+  },
+  "historical_build_runtime": {
+    "python": null,
+    "torch": null,
+    "safetensors": null,
+    "operating_system": null,
+    "cpu": null,
+    "launch_command": null,
+    "recording_status": "not preserved"
+  },
+  "modelopt_declared_build": "0.48.0dev-022767c7",
+  "modelopt_commit": "022767c7ab3d7d36211affd85e5c496770cde768",
+  "modelopt_module_init_sha256": "96647188e0afa8dcdcadbe42178feeb4cc19113d9ffcbaf633bd62414bd6d453",
+  "modelopt_nvfp4_tensor_sha256": "e128fd62f0d0c4aa179e057b53a615bccf42f30f8ed9ef7c8f7e3dc84c5eb61e",
+  "modelopt_fp8_tensor_sha256": "ec9caf56fc140720a55732f827dbdd41b9fdf8fcb961a1e37028d4d4b69b7fae",
+  "modelopt_fp8_hash_source": "derived from the recorded upstream ModelOpt commit",
+  "reproducibility_class": "method-equivalent; byte-identical output is not promised",
+  "note": "The complete capture runtime was recorded. Only the ModelOpt identity and critical codec hashes survive for the historical CPU build; the rest of that build environment was not preserved."
+}
+

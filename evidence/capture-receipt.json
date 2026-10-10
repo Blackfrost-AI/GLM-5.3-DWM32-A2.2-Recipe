@@ -1,0 +1,47 @@
+{
+  "schema": "blackfrost.dwm.capture-receipt.v1",
+  "status": "captured_verified",
+  "captured_utc_date": "2026-09-29",
+  "source_repo": "nvidia/GLM-5.3-NVFP4",
+  "source_revision": "e3b8f9f2fad29727dfa95e766c5cac18ea1414bf",
+  "bank_id": "glm53-q2-dwmip-original32-v1",
+  "pairs": 32,
+  "rows": 64,
+  "ordering": "harmful then matched control per pair",
+  "direction_derivation": {
+    "delta": "harmful minus control",
+    "mean_accumulator": "FP64",
+    "reduction": "simple mean over 32 pairs per layer",
+    "normalization": "L2 per layer",
+    "pca": false,
+    "svd": false,
+    "orthogonalization": false,
+    "additional_sign_anchoring": false
+  },
+  "legacy_bank_text_order_label_equal": true,
+  "raw_token_rows_sha256": "bade6eb8be22cd93fe36fe5bbd027b75245bb17ac78e34dd583280de24f92f1d",
+  "legacy_bank_sha256": "3ff10646a571a86b660bb4048d47d7984c56b779b5cf8a74c0d85045ea02f080",
+  "directions_sha256": "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8",
+  "directions_shape": [78, 6144],
+  "finite": true,
+  "unit_normalized": true,
+  "tensor_parallel_rank_captures_bitwise_equal": true,
+  "repeat_capture_bitwise_equal": true,
+  "split_half_cosine_mean": 0.6954933177336153,
+  "adjacent_layer_cosine_mean": 0.9267449154970407,
+  "template_applied": false,
+  "generated_tokens": 0,
+  "mtp_captured": false,
+  "weights_modified": false,
+  "alpha_selected": null,
+  "executed_capture_file_sha256": {
+    "capture_native_client.py": "6ae7f5c83e603d7a32f3a7d9fd1a3397a081103b058f28848dbc9c55d905c09b",
+    "native_hooks.py": "e3c4ddf368b702b2bb7057aa634751ead52ed10329252e0fe66b0355f260b66f",
+    "run_native_capture.sh": "d39a4283443703559890d66277775090b41be35564a6839dfa968f31b7477397",
+    "run_native_server.py": "c16d7786491395f92b293fbcb0aab855be6aec19cc3bd83eb42770fa30759028",
+    "run_native_server.sh": "66ac25a647cbaf552f2fe0b103fa8631d5e2a6c3c8fd8e7623ed431b455d3b01",
+    "native-server-command.json": "9cd7e0645aeff4d4527e5f046d945d80ab304912bf01d0af8c5fdb00803b4003"
+  },
+  "interpretation": "harmful/control prompt-content contrast; response-level refusal causality was not established by capture"
+}
+

@@ -1,0 +1,18 @@
+{
+  "schema": "blackfrost.private-release-asset.v1",
+  "repository": "Blackfrost-AI/GLM-5.3-DWM32-A2.2-Recipe",
+  "release_tag": "directions-v1",
+  "asset_name": "glm53-nvfp4-raw32.directions.safetensors",
+  "bytes": 193612804,
+  "sha256": "e12d8fee3e2f75dc7e269bc09c810f079eeb1abce258376ce65f811192db27f8",
+  "git_tracked": false,
+  "private": true,
+  "required_for_execution": true,
+  "contains": [
+    "78 unit direction vectors of width 6144",
+    "32 x 78 x 6144 paired deltas",
+    "64 x 78 x 6144 interleaved prompt activations",
+    "capture summary tensors"
+  ]
+}
+
